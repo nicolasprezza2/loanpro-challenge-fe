@@ -1,0 +1,14 @@
+.myRecords {
+    display: flex-root;
+    width: 100%;
+}
+
+/* .pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pageSize {
+    max-width: 60px;
+    padding-left: 1rem;
+} */

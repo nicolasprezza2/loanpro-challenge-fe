@@ -1,0 +1,9 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pageSize {
+    max-width: 60px;
+    padding-left: 1rem;
+}
