@@ -1,15 +1,18 @@
 const getBaseUrl = () => {
-    let url;
-    switch(process.env.NODE_ENV) {
+  
+    /* switch(process.env.NODE_ENV) {
       case 'prod':
         url = 'https://loanpro-challenge-be-production.up.railway.app/v1';
         break;
       case 'dev':
       default:
         url = 'http://localhost:8080/v1';
+    } */
+    if (process.env.NODE_ENV === 'prod') {
+        return  'https://loanpro-challenge-be-production.up.railway.app/v1';
     }
   
-    return url;
+    return 'http://localhost:8080/v1';
 }
 
 // export const BACKEND_URL = "http://localhost:8080/v1";
