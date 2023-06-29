@@ -1,4 +1,19 @@
-export const BACKEND_URL = "http://localhost:8080/v1";
+const getBaseUrl = () => {
+    let url;
+    switch(process.env.NODE_ENV) {
+      case 'prod':
+        url = 'https://loanpro-challenge-be-production.up.railway.app/v1';
+        break;
+      case 'dev':
+      default:
+        url = 'http://localhost:8080/v1';
+    }
+  
+    return url;
+}
+
+// export const BACKEND_URL = "http://localhost:8080/v1";
+export const BACKEND_URL = getBaseUrl();
 
 export const OPERATORS_NAMES = {
     ADDITION : "ADDITION",
