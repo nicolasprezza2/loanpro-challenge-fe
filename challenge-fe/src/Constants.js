@@ -8,7 +8,7 @@ const getBaseUrl = () => {
       default:
         url = 'http://localhost:8080/v1';
     } */
-    console.log("ENV:",process.env.CURRENT_ENV );
+    console.log("ENV:",process.env );
     if (process.env.CURRENT_ENV === 'prod') {
         return  'https://loanpro-challenge-be-production.up.railway.app/v1';
     }
