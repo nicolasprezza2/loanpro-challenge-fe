@@ -2,18 +2,13 @@ const getBaseUrl = () => {
   
     switch(process.env.NODE_ENV) {
       case 'production':
-        url = 'https://loanpro-challenge-be-production.up.railway.app/v1';
+        return  'https://loanpro-challenge-be-production.up.railway.app/v1';
         break;
       case 'development':
       default:
-        url = 'http://localhost:8080/v1';
+        return 'http://localhost:8080/v1';
     }
     console.log("ENV:",process.env );
- /*    if (process.env.CURRENT_ENV === 'prod') {
-        return  'https://loanpro-challenge-be-production.up.railway.app/v1';
-    } */
-  
-    return 'http://localhost:8080/v1';
 }
 
 // export const BACKEND_URL = "http://localhost:8080/v1";
